@@ -1,7 +1,0 @@
-C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Simple\bin\Debug\Factory.Simple.exe.config
-C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Simple\bin\Debug\Factory.Simple.exe
-C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Simple\bin\Debug\Factory.Simple.pdb
-C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Simple\obj\Debug\Factory.Simple.csprojResolveAssemblyReference.cache
-C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Simple\obj\Debug\Factory.Simple.csproj.CoreCompileInputs.cache
-C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Simple\obj\Debug\Factory.Simple.exe
-C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Simple\obj\Debug\Factory.Simple.pdb
