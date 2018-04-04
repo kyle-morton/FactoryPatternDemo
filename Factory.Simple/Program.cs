@@ -1,4 +1,5 @@
 ﻿using Factory.Simple.Factories;
+using Factory.Simple.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +15,9 @@ namespace Factory.Simple
             while(true)
             {
                 var key = PromptForKey();
-                var phoneType = GetPhoneType(key);
+                var phoneType = key.ToPhoneType();
 
-                if (phoneType == null)
-                    break;
+                if (phoneType == null) break;
 
                 var phone = new PhoneFactory().GetPhone(phoneType.Value);
                 phone.CallSomeone();
@@ -36,34 +36,12 @@ namespace Factory.Simple
             Console.WriteLine("Enter a cell phone type:");
             Console.WriteLine("a - android, i - iphone, b - blackberry, anything else - quit");
             Console.WriteLine("-----------------------------------------");
+            Console.Write("-> ");
 
             var key = Console.ReadKey().KeyChar;
             Console.WriteLine();
 
             return key;
-        }
-
-
-        private static PhoneType? GetPhoneType(char character)
-        {
-            PhoneType? type = null;
-
-            switch(character)
-            {
-                case 'a':
-                    type = PhoneType.Android;
-                    break;
-                case 'i':
-                    type = PhoneType.iPhone;
-                    break;
-                case 'b':
-                    type = PhoneType.Blackberry;
-                    break;
-                default:
-                    break;
-            }
-
-            return type;
         }
 
         private static void Terminate()

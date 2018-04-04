@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 
 namespace Factory.Simple.Factories
 {
+    /// <summary>
+    /// create phone objects
+    /// </summary>
     public class PhoneFactory
     {
 
         /// <summary>
-        /// returns a ready-to-use phone object
+        /// returns a ready-to-use phone
         /// </summary>
         /// <param name="type"></param>
         /// <returns></returns>
@@ -45,10 +48,4 @@ namespace Factory.Simple.Factories
         }
     }
 
-    public enum PhoneType
-    {
-        iPhone,
-        Android,
-        Blackberry
-    }
 }

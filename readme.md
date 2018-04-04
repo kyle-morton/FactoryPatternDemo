@@ -17,6 +17,5 @@
   - Object that the client requires which is produced by the factory.
 
 
-
 ![Client-Factory-Product](https://i-msdn.sec.s-msft.com/dynimg/IC59654.gif)
 
