@@ -24,3 +24,5 @@
 
 ## Complex Factory Example
 
+![Products](https://raw.githubusercontent.com/kylemorton5770/FactoryPatternDemo/master/images/products.png)
+
