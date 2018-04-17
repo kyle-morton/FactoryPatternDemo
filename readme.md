@@ -4,7 +4,6 @@
 - Use a specialized object solely to create other objects, like a real-world factory. 
 - Abstract object creation abstracted away from client so it can focus on it's specific role in the application (*seperation of concerns*).
 
-<br/>
 
 ## Actors
 
@@ -18,4 +17,10 @@
 
 
 ![Client-Factory-Product](https://i-msdn.sec.s-msft.com/dynimg/IC59654.gif)
+
+## Simple Factory Example
+
+
+
+## Complex Factory Example
 
