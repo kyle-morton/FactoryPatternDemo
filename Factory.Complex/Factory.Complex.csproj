@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7F9ED51C-AEE7-4C9F-8CAC-2E0D785E4AE3}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Factory.Shared</RootNamespace>
-    <AssemblyName>Factory.Shared</AssemblyName>
+    <ProjectGuid>{860A141F-A460-46E8-AB32-F9C720ED1CEF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Factory.Complex</RootNamespace>
+    <AssemblyName>Factory.Complex</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,14 +42,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Phones\Android.cs" />
-    <Compile Include="Phones\AppleIPhone.cs" />
-    <Compile Include="Phones\Blackberry.cs" />
-    <Compile Include="Phones\IAndroid.cs" />
-    <Compile Include="Phones\IAppleIPhone.cs" />
-    <Compile Include="Phones\ICellPhone.cs" />
-    <Compile Include="Phones\PhoneType.cs" />
+    <Compile Include="Factories\AndroidFactory.cs" />
+    <Compile Include="Factories\AppleIphoneFactory.cs" />
+    <Compile Include="Factories\IPhoneFactory.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Factory.Shared\Factory.Shared.csproj">
+      <Project>{7f9ed51c-aee7-4c9f-8cac-2e0d785e4ae3}</Project>
+      <Name>Factory.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

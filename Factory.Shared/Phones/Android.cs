@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Factory.Shared.Phones
 {
-    public class Android : ICellPhone
+    public class Android : IAndroid
     {
+
+        public void CreateGmailAccount()
+        {
+            Console.WriteLine();
+            Console.WriteLine("-> Android - Gmail Account Created!");
+        }
 
         public void CreateVoicemail()
         {
@@ -32,5 +38,6 @@ namespace Factory.Shared.Phones
             Console.WriteLine();
             Console.WriteLine("-> Hey Bill, I'm calling you from my new Android phone.");
         }
+
     }
 }

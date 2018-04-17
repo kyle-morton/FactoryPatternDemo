@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Factory.Shared.Phones
 {
-    public class AppleIPhone : ICellPhone
+    public class AppleIPhone : IAppleIPhone
     {
+
+        public void CreateICloudAccount()
+        {
+            Console.WriteLine();
+            Console.WriteLine("-> iPhone - iCloud Account Created!");
+        }
 
         public void CreateVoicemail()
         {
