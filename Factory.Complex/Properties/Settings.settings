@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="PhoneFactory" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Factory.Complex.Factories.AppleIphoneFactory</Value>
+      <Value Profile="(Default)">Factory.Complex.Factories.AndroidFactory</Value>
     </Setting>
   </Settings>
 </SettingsFile>

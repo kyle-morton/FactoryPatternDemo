@@ -9,6 +9,10 @@ namespace Factory.Shared.Phones
     public class AppleIPhone : IAppleIPhone
     {
 
+        public AppleIPhone()
+        {
+        }
+
         public void CreateICloudAccount()
         {
             Console.WriteLine();

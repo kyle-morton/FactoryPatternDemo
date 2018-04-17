@@ -9,6 +9,10 @@ namespace Factory.Shared.Phones
     public class Android : IAndroid
     {
 
+        public Android()
+        {
+        }
+
         public void CreateGmailAccount()
         {
             Console.WriteLine();

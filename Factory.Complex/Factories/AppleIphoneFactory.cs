@@ -11,8 +11,11 @@ namespace Factory.Complex.Factories
     {
         public ICellPhone CreatePhone()
         {
-            var phone = new AppleIPhone();
+            IAppleIPhone phone = new AppleIPhone();
+
+            //custom setup for Apple iPhone
             phone.CreateICloudAccount();
+
             phone.RegisterPhoneNumber();
             phone.CreateVoicemail();
             phone.StartService();

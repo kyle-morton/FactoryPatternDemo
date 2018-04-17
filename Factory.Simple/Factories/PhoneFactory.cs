@@ -26,14 +26,10 @@ namespace Factory.Simple.Factories
             switch(type)
             {
                 case PhoneType.Android:
-                    var android = new Android();
-                    android.CreateGmailAccount();
-                    phone = android;
+                    phone = new Android();
                     break;
                 case PhoneType.iPhone:
-                    var iPhone = new AppleIPhone();
-                    iPhone.CreateICloudAccount();
-                    phone = iPhone;
+                    phone = new AppleIPhone();
                     break;
                 case PhoneType.Blackberry:
                     phone = new Blackberry();

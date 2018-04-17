@@ -11,8 +11,11 @@ namespace Factory.Complex.Factories
     {
         public ICellPhone CreatePhone()
         {
-            var android = new Android();
+            IAndroid android = new Android();
+
+            //custom setup for Android
             android.CreateGmailAccount();
+
             android.RegisterPhoneNumber();
             android.CreateVoicemail();
             android.StartService();

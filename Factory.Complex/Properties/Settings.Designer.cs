@@ -25,7 +25,7 @@ namespace Factory.Complex.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Factory.Complex.Factories.AppleIphoneFactory")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Factory.Complex.Factories.AndroidFactory")]
         public string PhoneFactory {
             get {
                 return ((string)(this["PhoneFactory"]));

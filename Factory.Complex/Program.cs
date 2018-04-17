@@ -29,7 +29,6 @@ namespace Factory.Complex
             //Factory.Complex.Factories.AndroidFactory
             //Factory.Complex.Factories.AppleIphoneFactory
 
-
             //get fully qualified name of factory to instantiate
             string factoryName = Properties.Settings.Default.PhoneFactory;
 
