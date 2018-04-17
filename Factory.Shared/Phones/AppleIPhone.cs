@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory.Simple.Phones
+namespace Factory.Shared.Phones
 {
     public class AppleIPhone : ICellPhone
     {
@@ -30,7 +30,7 @@ namespace Factory.Simple.Phones
         public void CallSomeone()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Hello Gloria, I'm calling you from my brand-new Apple iPhone.");
+            Console.WriteLine("-> Hey Mary, I'm calling you from my new Apple iPhone.");
         }
 
     }

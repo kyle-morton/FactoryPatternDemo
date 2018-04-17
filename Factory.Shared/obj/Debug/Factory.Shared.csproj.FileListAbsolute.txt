@@ -1,0 +1,6 @@
+C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Shared\bin\Debug\Factory.Shared.dll
+C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Shared\bin\Debug\Factory.Shared.pdb
+C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Shared\obj\Debug\Factory.Shared.csprojResolveAssemblyReference.cache
+C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Shared\obj\Debug\Factory.Shared.csproj.CoreCompileInputs.cache
+C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Shared\obj\Debug\Factory.Shared.dll
+C:\Users\MORTONM\source\repos\FactoryDemo\Factory.Shared\obj\Debug\Factory.Shared.pdb

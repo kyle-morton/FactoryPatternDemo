@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory.Simple.Phones
+namespace Factory.Shared.Phones
 {
     public interface ICellPhone
     {

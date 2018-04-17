@@ -4,33 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory.Simple.Phones
+namespace Factory.Shared.Phones
 {
-    public class Blackberry : ICellPhone
+    public class Android : ICellPhone
     {
+
         public void CreateVoicemail()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Blackberry - Voicemail Box Created!");
+            Console.WriteLine("-> Android - Voicemail Box Created!");
         }
 
         public void RegisterPhoneNumber()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Blackberry - Phone Number Registered!");
+            Console.WriteLine("-> Android - Phone Number Registered!");
         }
 
         public void StartService()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Blackberry - Starting Service");
+            Console.WriteLine("-> Android - Starting Service");
         }
 
         public void CallSomeone()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Hello Aaron, I bought this phone in 2004.");
+            Console.WriteLine("-> Hey Bill, I'm calling you from my new Android phone.");
         }
-
     }
 }
