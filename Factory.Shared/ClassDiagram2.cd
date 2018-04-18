@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Factory.Shared.Phones.Android" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5.25" Y="2.75" Width="1.5" />
+    <Position X="0.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAIAAQAAAAAAAAAAAAABAAAAAAAAAACAA=</HashCode>
       <FileName>Phones\Android.cs</FileName>
@@ -9,7 +9,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Factory.Shared.Phones.AppleIPhone" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="7" Y="2.75" Width="1.5" />
+    <Position X="2.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAIAAQAAAAAAAAQAAAABAAAAAAAAAACAA=</HashCode>
       <FileName>Phones\AppleIPhone.cs</FileName>
@@ -17,7 +17,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Factory.Shared.Phones.Blackberry" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5.25" Y="3.75" Width="1.5" />
+    <Position X="1.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAIAAQAAAAAAAAAAAAABAAAAAAAAAACAA=</HashCode>
       <FileName>Phones\Blackberry.cs</FileName>

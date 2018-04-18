@@ -1,10 +1,6 @@
 ﻿using Factory.Simple.Factories;
-using Factory.Simple.Extensions;
+using Factory.Simple.Phones;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Factory.Simple
 {
@@ -15,7 +11,7 @@ namespace Factory.Simple
             while(true)
             {
                 var key = PromptForKey();
-                var phoneType = key.ToPhoneType();
+                var phoneType = GetPhoneType(key);
 
                 if (phoneType == null) break;
 
@@ -29,6 +25,7 @@ namespace Factory.Simple
             Terminate();
         }
 
+        #region PROMPT
 
         private static char PromptForKey()
         {
@@ -50,6 +47,39 @@ namespace Factory.Simple
             Console.WriteLine("Terminating...");
             Console.ReadLine();
         }
+
+        #endregion
+
+        #region PROMPT
+
+        /// <summary>
+        /// return phone type depending on key entered
+        /// </summary>
+        /// <param name="character"></param>
+        /// <returns></returns>
+        public static PhoneType? GetPhoneType(char character)
+        {
+            PhoneType? type = null;
+
+            switch (character)
+            {
+                case 'a':
+                    type = PhoneType.Android;
+                    break;
+                case 'i':
+                    type = PhoneType.iPhone;
+                    break;
+                case 'b':
+                    type = PhoneType.Blackberry;
+                    break;
+                default:
+                    break;
+            }
+
+            return type;
+        }
+
+        #endregion
 
     }
 }

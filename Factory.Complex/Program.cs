@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Factory.Complex.Factories;
+using System;
 using System.Reflection;
-using System.Runtime.Remoting.Channels;
-using System.Text;
-using System.Threading.Tasks;
-using Factory.Complex.Factories;
-using Factory.Shared.Phones;
+using Factory.Complex.Phones;
 
 namespace Factory.Complex
 {
