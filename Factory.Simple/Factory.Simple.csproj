@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\IPhoneFactory.cs" />
     <Compile Include="Factories\PhoneFactory.cs" />
     <Compile Include="Phones\Android.cs" />
     <Compile Include="Phones\AppleIPhone.cs" />
