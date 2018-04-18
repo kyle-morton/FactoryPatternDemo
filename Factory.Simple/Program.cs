@@ -11,11 +11,12 @@ namespace Factory.Simple
             while(true)
             {
                 var key = PromptForKey();
-                var phoneType = GetPhoneType(key);
+                var isValid = ValidateEntry(key);
 
-                if (phoneType == null) break;
-
-                var phone = new PhoneFactory().GetPhone(phoneType.Value);
+                if (!isValid) break;
+                
+                IPhoneFactory factory = LoadFactory();
+                var phone = factory.GetPhone(key);
                 phone.CallSomeone();
 
                 Console.ReadLine();
@@ -24,6 +25,15 @@ namespace Factory.Simple
 
             Terminate();
         }
+
+        #region FACTORY 
+
+        public static IPhoneFactory LoadFactory()
+        {
+            return new PhoneFactory();
+        }
+
+        #endregion
 
         #region PROMPT
 
@@ -57,26 +67,22 @@ namespace Factory.Simple
         /// </summary>
         /// <param name="character"></param>
         /// <returns></returns>
-        public static PhoneType? GetPhoneType(char character)
+        public static bool ValidateEntry(char character)
         {
-            PhoneType? type = null;
 
             switch (character)
             {
-                case 'a':
-                    type = PhoneType.Android;
-                    break;
-                case 'i':
-                    type = PhoneType.iPhone;
-                    break;
-                case 'b':
-                    type = PhoneType.Blackberry;
-                    break;
+                case 'a': //android
+                case 'A':
+                case 'i': //iphone
+                case 'I':
+                case 'b': //blackberry
+                case 'B':
+                    return true;
                 default:
-                    break;
+                    return false;
             }
 
-            return type;
         }
 
         #endregion

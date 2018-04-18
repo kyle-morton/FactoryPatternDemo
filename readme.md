@@ -20,9 +20,9 @@
 
 ## Simple Factory Example
 
-
+![Products](https://raw.githubusercontent.com/kylemorton5770/FactoryPatternDemo/master/images/Simple.png)
 
 ## Complex Factory Example
 
-![Products](https://raw.githubusercontent.com/kylemorton5770/FactoryPatternDemo/master/images/products.png)
+![Products](https://raw.githubusercontent.com/kylemorton5770/FactoryPatternDemo/master/images/Complex.png)
 

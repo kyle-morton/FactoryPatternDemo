@@ -25,9 +25,7 @@ namespace Factory.Complex.Phones
         public void CallSomeone()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Hey Adam, [Insert funny line about Blackberry phones being old & stupid]. " +
-                              "\n\n" +
-                              "*Hold for laughter*");
+            Console.WriteLine("-> Hey Adam! This is so much better than that tin-can & string thing!");
         }
 
     }

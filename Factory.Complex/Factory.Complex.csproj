@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Factories\AndroidFactory.cs" />
     <Compile Include="Factories\AppleIphoneFactory.cs" />
+    <Compile Include="Factories\BlackberryFactory.cs" />
     <Compile Include="Factories\IPhoneFactory.cs" />
     <Compile Include="Phones\Android.cs" />
     <Compile Include="Phones\AppleIPhone.cs" />
@@ -51,7 +52,6 @@
     <Compile Include="Phones\IAndroid.cs" />
     <Compile Include="Phones\IAppleIPhone.cs" />
     <Compile Include="Phones\ICellPhone.cs" />
-    <Compile Include="Phones\PhoneType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

@@ -6,7 +6,7 @@ namespace Factory.Simple.Factories
     /// <summary>
     /// create phone objects
     /// </summary>
-    public class PhoneFactory
+    public class PhoneFactory : IPhoneFactory
     {
 
         /// <summary>
@@ -14,20 +14,23 @@ namespace Factory.Simple.Factories
         /// </summary>
         /// <param name="type"></param>
         /// <returns></returns>
-        public ICellPhone GetPhone(PhoneType type)
+        public ICellPhone GetPhone(char type)
         {
-            ICellPhone phone = null;
+            ICellPhone phone;
 
             //create instance of phone 
             switch(type)
             {
-                case PhoneType.Android:
+                case 'a':
+                case 'A':
                     phone = new Android();
                     break;
-                case PhoneType.iPhone:
+                case 'i':
+                case 'I':
                     phone = new AppleIPhone();
                     break;
-                case PhoneType.Blackberry:
+                case 'b':
+                case 'B':
                     phone = new Blackberry();
                     break;
                 default:
