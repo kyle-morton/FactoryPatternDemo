@@ -20,13 +20,9 @@
 ![Client-Factory-Product](https://i-msdn.sec.s-msft.com/dynimg/IC59654.gif)
 
 
-## Why Interfaces?
-- coding to a contract (interface) rather than a concrete class allows for more resilient, generic code
-- can loosen coupling between layers (__ex.__ IEnumerable instead Array/List)
-- client code (whoever gets an instance of the interface) only has access to the exposed methods/properties in the interface
+## Examples
 
-
-## Simple Factory Example
+### 1) Simple Factory
 - single factory concrete-type (PhoneFactory) decides which product to create
 - 3 different products (Android, Blackberry, Apple iPhone)
 - client simply creates a new *PhoneFactory* instance, then passes in a variable telling Factory which product to build 
@@ -35,7 +31,12 @@
 
 ![Products](https://raw.githubusercontent.com/kylemorton5770/FactoryPatternDemo/master/images/Simple.png)
 
-## Complex Factory Example
+#### Why Interfaces?
+- coding to a contract (interface) rather than a concrete class allows for more resilient, generic code
+- can loosen coupling between layers (__ex.__ IEnumerable instead Array/List)
+- client code (whoever gets an instance of the interface) only has access to the exposed methods/properties in the interface
+
+### 2) Complex Factory
 
 - multiple concrete-types for factory, each creates it's own phone type.
 - 3 different products, but 2 now implement their own interface (IAndroid, IAppleIPhone)
@@ -45,4 +46,3 @@
 <br/>
 
 ![Products](https://raw.githubusercontent.com/kylemorton5770/FactoryPatternDemo/master/images/Complex.png)
-
