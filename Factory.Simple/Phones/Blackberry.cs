@@ -4,6 +4,7 @@ namespace Factory.Simple.Phones
 {
     public class Blackberry : ICellPhone
     {
+        public string Carrier { get; set; }
         public void CreateVoicemail()
         {
             Console.WriteLine();
@@ -19,15 +20,15 @@ namespace Factory.Simple.Phones
         public void StartService()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Blackberry - Starting Service");
+            Console.WriteLine($"-> Blackberry - Starting Service with: {Carrier}");
         }
 
         public void CallSomeone()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Hey Adam, [Insert funny line about Blackberry phones being old & stupid]. " +
-                              "\n\n" +
-                              "*Hold for laughter*");
+            Console.WriteLine("-> Hello Adam, I purchased this phone in 2004. I even have a case for it on my belt." +
+                              "\n\n\n\n\n" +
+                              "Blackberries are for old people.");
         }
 
     }

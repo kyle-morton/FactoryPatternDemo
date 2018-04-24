@@ -23,15 +23,21 @@ namespace Factory.Simple.Factories
             {
                 case 'a':
                 case 'A':
-                    phone = new Android();
+                    phone = new Android { 
+                        Carrier = "Verizon"
+                    };
                     break;
                 case 'i':
                 case 'I':
-                    phone = new AppleIPhone();
+                    phone = new AppleIPhone {
+                        Carrier = "AT&T"
+                    };
                     break;
                 case 'b':
                 case 'B':
-                    phone = new Blackberry();
+                    phone = new Blackberry {
+                        Carrier = "Sprint"
+                    };
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

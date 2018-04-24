@@ -4,6 +4,7 @@ namespace Factory.Simple.Phones
 {
     public class Android : ICellPhone
     {
+        public string Carrier { get; set; }
 
         public void CreateVoicemail()
         {
@@ -20,7 +21,7 @@ namespace Factory.Simple.Phones
         public void StartService()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Android - Starting Service");
+            Console.WriteLine($"-> Android - Starting Service with: {Carrier}");
         }
 
         public void CallSomeone()

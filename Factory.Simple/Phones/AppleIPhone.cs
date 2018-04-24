@@ -4,7 +4,7 @@ namespace Factory.Simple.Phones
 {
     public class AppleIPhone : ICellPhone
     {
-
+        public string Carrier { get; set; }
         public void CreateVoicemail()
         {
             Console.WriteLine();
@@ -20,7 +20,7 @@ namespace Factory.Simple.Phones
         public void StartService()
         {
             Console.WriteLine();
-            Console.WriteLine("-> iPhone - Starting Service");
+            Console.WriteLine($"-> iPhone - Starting Service with: {Carrier}");
         }
 
         public void CallSomeone()

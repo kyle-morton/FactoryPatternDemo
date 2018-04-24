@@ -2,6 +2,7 @@
 {
     public interface ICellPhone
     {
+        string Carrier { get; set; }
         void RegisterPhoneNumber();
         void CreateVoicemail();
         void StartService();
