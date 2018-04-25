@@ -26,9 +26,7 @@ namespace Factory.Simple.Phones
         public void CallSomeone()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Hello Adam, I purchased this phone in 2004. I even have a case for it on my belt." +
-                              "\n\n\n\n\n" +
-                              "Blackberries are for old people.");
+            Console.WriteLine("-> Blackberry - Call Connected!");
         }
 
     }

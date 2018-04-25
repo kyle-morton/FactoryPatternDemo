@@ -27,7 +27,7 @@ namespace Factory.Simple.Phones
         public void CallSomeone()
         {
             Console.WriteLine();
-            Console.WriteLine("-> Hey Bill, I'm calling you from my new Android phone.");
+            Console.WriteLine("-> Android - Call Connected!");
         }
 
     }
